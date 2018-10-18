@@ -1,5 +1,5 @@
 import { DialogService } from 'ng2-bootstrap-modal';
-import { NewYorkTimesService } from '../../modules/';
+import { NytService } from './../../modules/nyt/nyt.service';
 import { Component, OnInit } from '@angular/core';
 import {SciencePopupComponent} from './science-popup/science-popup.component';
 
@@ -11,7 +11,7 @@ import {SciencePopupComponent} from './science-popup/science-popup.component';
 export class ScienceComponent {
   artists: any[] = [ ];
   attributes: any[] = [ ];
-  constructor(private _apiSvc: NewYorkTimesService, private _dialogService: DialogService) {
+  constructor(private _apiSvc: NytService, private _dialogService: DialogService) {
     _apiSvc.getArtists(1).subscribe(x => {
       this.artists = x.artists.artist;
       this.attributes = x.artists['@attr'];

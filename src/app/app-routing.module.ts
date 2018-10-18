@@ -1,5 +1,5 @@
 import { TechComponent } from './views/tech/tech.component';
-import { ScienceComponent } from './views/tech/science.component';
+import { ScienceComponent } from './views/science/science.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
