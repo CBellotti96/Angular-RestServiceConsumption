@@ -1,5 +1,8 @@
 import { Injectable } from '@angular/core'; //generated
 import { Http, Headers } from '@angular/http'; //added from silber's
+import { Observable } from 'rxjs';
+import 'rxjs/add/operator/map';
+import { map } from 'rxjs/operators';
 
 @Injectable({ //generated
   providedIn: 'root' //generated
@@ -39,13 +42,27 @@ export class NytService { //generated
 */
 /* copypasta from silber */
 
-
+/*
 getTechArticles = () => this.http.get(
   this.baseUri + '?api_key=59c2f98774d24c8fa26ffe6b85e6afed',
   { headers: this.headers }).map(x => {
     console.log(x.json());
     return x.json();
-})
+})*/
+
+getTechArticles = () => this.http.get(
+  this.baseUri + '?api_key=59c2f98774d24c8fa26ffe6b85e6afed',
+  { headers: this.headers }).pipe(map(response => {
+    const x = response.json();
+    return x;
+}))
+
+
+
+
+
+
+
 
 //https://api.nytimes.com/svc/topstories/v2/technology.json
 //?api-key=59c2f98774d24c8fa26ffe6b85e6afed
