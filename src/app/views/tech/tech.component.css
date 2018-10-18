@@ -1,0 +1,15 @@
+table th{
+    text-align: left;
+    font-size: large;
+    padding-right:20px;
+}
+
+
+.clickable:hover{
+    background: whitesmoke;
+    cursor: pointer;
+}
+.detail div{
+    background-color:whitesmoke;
+    padding:0;
+}
