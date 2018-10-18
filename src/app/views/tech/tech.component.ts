@@ -9,23 +9,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TechComponent implements OnInit {
 
-  tracks: any[] = [ ];
+  articles: any[] = [ ];
   attributes: any[] = [ ];
-  selectedTrack = -1;
+  selectedArt = -1;
   constructor(private _apiSvc: NytService, private _dialogService: DialogService) {
-    _apiSvc.getTracks(1).subscribe(x => {
-      this.tracks = x.tracks.track;
-      this.attributes = x.tracks['@attr'];
+    _apiSvc.getTechArticles().subscribe(x => {
+      this.articles = x.results;
+      this.attributes = x.results['@attr'];
      });
   }
 
-  showDetail(index, track) {
+  showDetail(index, article) {
     console.log(index);
-    console.log(track.name);
-    if (this.selectedTrack === index){
-      this.selectedTrack = -1;
+    console.log(article.name);
+    if (this.selectedArt === index){
+      this.selectedArt = -1;
     } else {
-      this.selectedTrack = index;
+      this.selectedArt = index;
     }
   }
     ngOnInit() {

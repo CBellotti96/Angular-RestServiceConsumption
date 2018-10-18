@@ -9,6 +9,7 @@ import {SciencePopupComponent} from './science-popup/science-popup.component';
   styleUrls: ['./science.component.css']
 })
 export class ScienceComponent {
+  /*
   artists: any[] = [ ];
   attributes: any[] = [ ];
   constructor(private _apiSvc: NytService, private _dialogService: DialogService) {
@@ -32,4 +33,28 @@ export class ScienceComponent {
                       disposable.unsubscribe();
                   }, 10000);
   }
+  */
+
+    articles: any[] = [ ];
+    attributes: any[] = [ ];
+    selectedArt = -1;
+    constructor(private _apiSvc: NytService, private _dialogService: DialogService) {
+      _apiSvc.getTechArticles().subscribe(x => {
+        this.articles = x.results;
+        this.attributes = x.results['@attr'];
+       });
+    }
+
+    showDetail(index, article) {
+      console.log(index);
+      console.log(article.name);
+      if (this.selectedArt === index){
+        this.selectedArt = -1;
+      } else {
+        this.selectedArt = index;
+      }
+    }
+      ngOnInit() {
+    }
+
 }

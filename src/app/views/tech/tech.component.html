@@ -1,4 +1,4 @@
-<div [hidden]="tech.length==0">
+<div [hidden]="articles.length==0">
     <h2>Top {{attributes.perPage}} Tech Articles on NYT</h2>
     <div class="container-fluid">
       <table class="table table-responsive">
@@ -6,27 +6,27 @@
           <th>Position</th><th>Article</th>
       </thead>
       <tbody>
-      <template ngFor let-track [ngForOf]="tracks" let-index="index">
-      <tr  (click)='showDetail(index,track)' class="clickable" >
+      <ng-template ngFor let-article [ngForOf]="articles" let-index="index">
+      <tr  (click)='showDetail(index,article)' class="clickable" >
         <td>
-      {{index+1}}</td><td> {{track.name}}</td><td>{{track.artist.name}}</td>
+      {{index+1}}</td><td> {{article.name}}</td><td>{{article.byline}}</td>
       </tr>
       <tr>
-        <td colspan=3 class='detail' [hidden]='index!=selectedTrack'>
+        <td colspan=3 class='detail' [hidden]='index!=selectedArt'>
           <div class="container-fluid">
           <div class='col-md-3'>
-            <img src='{{track.image[2]["#text"]}}' class="img-responsive" >
-            </div>  
+            <img src='{{article.multimedia[0].url}}' class="img-responsive" >
+            </div>
             <div class="col-md-4">
-            <h2>{{track.name}}</h2>
-            <h4>Artist: {{track.artist.name}}</h4>
-            <h4>PlayCount: {{track.playcount}}</h4>
-            <h4><a href='{{track.url}}' target='_new'>Last.Fm Webpage</a></h4>
+            <h2>{{article.name}}</h2>
+            <h4>Author: {{article.byline}}</h4>
+            <h4>Published: {{article.published_date}}</h4>
+            <!--<h4><a href='{{track.url}}' target='_new'>Last.Fm Webpage</a></h4>-->
           </div>
         </div>
         </td>
       </tr>
-    </template>
+    </ng-template>
   </tbody>
   </table>
     <br/>&nbsp;
