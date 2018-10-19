@@ -5,24 +5,6 @@
 <router-outlet></router-outlet>
   </div>
 </div>
-<nav class="navbar-wrapper navbar-default navbar-fixed-top navbar-static-top" role="navigation">
-  <div class="container">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">NYT articles</a>
-      <button type="button" class='navbar-toggle collapsed' (click)="menuCollapsed = !menuCollapsed"></button>
-    </div>
-    <div class="collapse navbar-collapse navbar-ex1-collapse" [collapse]='menuCollapsed'>
-        <ul class="nav navbar-nav">
-          <li routerLinkActive='active'>
-            <a routerLink="tech">tech</a>
-          </li>
-          <li routerLinkActive='active'>
-            <a routerLink="science">science</a>
-          </li>
-        </ul>
-    </div>
-  </div>
-</nav>
 <div style="text-align:center" class="jumbotron">
   <h4>Data provided by New York Times</h4>
 </div>

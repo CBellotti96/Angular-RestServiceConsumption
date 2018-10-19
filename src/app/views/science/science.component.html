@@ -1,4 +1,29 @@
 <div [hidden]="science.length==0">
+  <!--The content below is only a placeholder and can be replaced.-->
+
+<div class='height-fix'>
+    <div>
+  <router-outlet></router-outlet>
+    </div>
+  </div>
+  <nav class="navbar-wrapper navbar-default navbar-fixed-top navbar-static-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">NYT articles</a>
+        <button type="button" class='navbar-toggle collapsed' (click)="menuCollapsed = !menuCollapsed"></button>
+      </div>
+      <div class="collapse navbar-collapse navbar-ex1-collapse" [collapse]='menuCollapsed'>
+          <ul class="nav navbar-nav">
+            <li routerLinkActive='active'>
+              <a href="/tech" routerLink="/tech">tech</a>
+            </li>
+            <li routerLinkActive='active'>
+              <a href="/science" routerLink="/science">science</a>
+            </li>
+          </ul>
+      </div>
+    </div>
+  </nav>
     <h2>Top {{attributes.perPage}} Top Science Articles on NYT</h2>
     <div class="container-fluid">
     <table class='table-responsive table'>
