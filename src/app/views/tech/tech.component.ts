@@ -16,7 +16,7 @@ export class TechComponent implements OnInit {
   constructor(private _apiSvc: NytService, private _dialogService: DialogService) {
     _apiSvc.getTechArticles().subscribe(x => {
       this.articles = x.results;
-      this.attributes = x.results['@attr'];
+      this.attributes = x;
      });
   }
 
@@ -30,11 +30,13 @@ export class TechComponent implements OnInit {
     }
   }
 
-  $scope.mySplit = function(string, nb) {
+  mySplit(string, nb) {
     var array = string.split('T');
     return array[nb];
   }
-    ngOnInit() {
+
+  ngOnInit() {
+
   }
 
 }

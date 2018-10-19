@@ -1,5 +1,5 @@
-<div [hidden]="articles.length==0">
-    <h2 class="myheaders">Top {{attributes.perPage}} Tech Articles on NYT</h2>
+<div [hidden]="attributes.num_results==0">
+    <h2 class="myheaders">Top {{attributes.num_results}} Tech Articles on NYT</h2>
     <div class="container-fluid">
       <table class="table table-responsive">
         <thead>
