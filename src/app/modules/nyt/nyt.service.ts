@@ -39,6 +39,19 @@ export class NytService { //generated
       return x;
   }))
 
+  getScienceArticles = () => this.http.get(
+    this.baseUri + '?api_key=59c2f98774d24c8fa26ffe6b85e6afed',
+    { headers: new Headers({
+      //'Content-Type': 'application/json'
+      //'Accept': 'application/json',
+      //'Access-Control-Allow-Headers': 'Accept, Content-Type,',
+    }) }).pipe(map(response => {
+      const x = response.json();
+      //console.log(x);
+      //console.log(this.headers);
+      return x;
+  }))
+
 //https://api.nytimes.com/svc/topstories/v2/technology.json
 //?api-key=59c2f98774d24c8fa26ffe6b85e6afed
 
