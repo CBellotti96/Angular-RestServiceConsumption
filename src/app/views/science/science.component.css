@@ -19,8 +19,9 @@ table {
 
 }
 h2 {
-  text-align: left;
-  padding-left: 10%;
+  text-align: center;
+  font-style: bold;
+  font-family: "Arial Black", Gadget, sans-serif;
 
 }
 .navbar-header {
@@ -28,11 +29,13 @@ h2 {
     width: 220px;
 }
 .navbar-brand {
-    font-size: 24px;
+    font-size: 21px;
+    font-family: Arial, Helvetica, sans-serif;
     display: inline-block;
 }
 .navbar-brand:hover {
-    font-size: 24px;
+    font-size: 21px;
+    font-family: Arial, Helvetica, sans-serif;
     display: inline-block;
     cursor: pointer;
 }
@@ -43,23 +46,27 @@ h2 {
 }
 .tech-nav {
     display: inline-block;
-    font-size: 24px;   
+    font-size: 21px;   
+    font-family: Arial, Helvetica, sans-serif;
     padding-left: 20px;
 }
 .tech-nav:hover {
     display: inline-block;
-    font-size: 24px;   
+    font-size: 21px;  
+    font-family: Arial, Helvetica, sans-serif; 
     padding-left: 20px;
     cursor: pointer;
 }
 .science-nav {
     display: inline-block;
-    font-size: 24px;   
+    font-size: 21px; 
+    font-family: Arial, Helvetica, sans-serif;  
     padding-left: 20px;
 }
 .science-nav:hover {
     display: inline-block;
-    font-size: 24px;   
+    font-size: 21px; 
+    font-family: Arial, Helvetica, sans-serif;  
     padding-left: 20px;
     cursor: pointer;
 }
