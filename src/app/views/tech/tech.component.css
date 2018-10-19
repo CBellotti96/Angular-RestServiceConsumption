@@ -18,6 +18,9 @@ table {
   padding-right: 10%;
 
 }
+.myheaders {
+    font-size: 36px;
+}
 .navbar-header {
     margin: auto;
     width: 220px;
