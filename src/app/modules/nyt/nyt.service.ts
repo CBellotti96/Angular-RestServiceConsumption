@@ -27,7 +27,7 @@ export class NytService { //generated
   }
 
   getTechArticles = () => this.http.get(
-    this.baseUri + '?api_key=59c2f98774d24c8fa26ffe6b85e6afed',
+    this.baseUri + 'technology.json?api_key=59c2f98774d24c8fa26ffe6b85e6afed',
     { headers: new Headers({
       //'Content-Type': 'application/json'
       //'Accept': 'application/json',
@@ -40,7 +40,7 @@ export class NytService { //generated
   }))
 
   getScienceArticles = () => this.http.get(
-    this.baseUri + '?api_key=59c2f98774d24c8fa26ffe6b85e6afed',
+    this.baseUri + 'science.json?api_key=59c2f98774d24c8fa26ffe6b85e6afed',
     { headers: new Headers({
       //'Content-Type': 'application/json'
       //'Accept': 'application/json',
