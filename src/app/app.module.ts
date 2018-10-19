@@ -1,5 +1,6 @@
 import { AppComponent } from './app.component';
 import { TechComponent } from './views/tech/tech.component';
+import { HomeComponent } from './views/home/home.component';
 import { ScienceComponent } from './views/science/science.component';
 import { NytModule } from './modules/nyt/nyt.module';
 import { BrowserModule } from '@angular/platform-browser';
@@ -13,7 +14,8 @@ import { CollapseModule } from 'ngx-bootstrap';
   declarations: [
     AppComponent,
     ScienceComponent,
-    TechComponent
+    TechComponent,
+    HomeComponent
   ],
   imports: [
     NytModule,
