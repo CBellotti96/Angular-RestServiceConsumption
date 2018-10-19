@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 export function nytfactory(http: Http){
-  return new NytService(http, 'https://api.nytimes.com/svc/topstories/v2/technology.json');
+  return new NytService(http, 'https://api.nytimes.com/svc/topstories/v2/');
 }
 
 @NgModule({

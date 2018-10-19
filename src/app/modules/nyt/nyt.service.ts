@@ -27,7 +27,20 @@ export class NytService { //generated
   }
 
   getTechArticles = () => this.http.get(
-    this.baseUri + '?api_key=59c2f98774d24c8fa26ffe6b85e6afed',
+    this.baseUri + 'technology.json?api_key=59c2f98774d24c8fa26ffe6b85e6afed',
+    { headers: new Headers({
+      //'Content-Type': 'application/json'
+      //'Accept': 'application/json',
+      //'Access-Control-Allow-Headers': 'Accept, Content-Type,',
+    }) }).pipe(map(response => {
+      const x = response.json();
+      //console.log(x);
+      //console.log(this.headers);
+      return x;
+  }))
+
+  getScienceArticles = () => this.http.get(
+    this.baseUri + 'science.json?api_key=59c2f98774d24c8fa26ffe6b85e6afed',
     { headers: new Headers({
       //'Content-Type': 'application/json'
       //'Accept': 'application/json',
