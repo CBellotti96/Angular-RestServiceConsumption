@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div [hidden]="attributes.num_results==0">
     <div class='height-fix'>
         <div>
@@ -56,3 +57,65 @@
     <br/>&nbsp;
   </div>
 </div>
+=======
+<div [hidden]="attributes.num_results==0">
+    <div class='height-fix'>
+        <div>
+      <router-outlet></router-outlet>
+        </div>
+      </div>
+      <nav class="navbar-wrapper navbar-default navbar-fixed-top navbar-static-top" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <div class="navbar-brand" routerLinkActive='active'>
+                <div href="/tech" routerLink="/home">Home</div>
+            </div>
+            <div class="tech-nav" routerLinkActive='active'>
+                <div href="/tech" routerLink="/tech">Tech</div>
+            </div>
+              <div class="science-nav" routerLinkActive='active'>
+                <div href="/science" routerLink="/science">Science</div>
+              </div>
+          </div>
+        </div>
+      </nav>
+    <h2 class="myheaders">Top {{attributes.num_results}} Tech Articles on NYT</h2>
+    <div class="container-fluid">
+      <table class="table table-responsive">
+        <thead>
+          <th></th>
+          <th>Article</th>
+          <th>Author</th>
+      </thead>
+      <tbody>
+      <ng-template ngFor let-article [ngForOf]="articles" let-index="index">
+      <tr  (click)='showDetail(index,article)' class="clickable" >
+        <!--<td>{{index+1}}</td>-->
+        <td><img src='{{article.multimedia[0].url}}' class="img-responsive" ></td>
+        <td>{{article.title}}</td>
+        <td>{{article.byline}}</td>
+      </tr>
+      <tr>
+        <td colspan=3 class='detail' [hidden]='index!=selectedArt'>
+          <div class="container-fluid">
+          <div class='col-md-3'>
+            <!--<img src='{{article.multimedia[0].url}}' class="img-responsive" >-->
+              <!--<h4>{{article.multimedia[0].caption}}</h4>-->
+            </div>
+            <div class="col-md-4">
+            <h2>{{article.title}}</h2>
+            <h4>{{article.byline}}</h4>
+            <h4>{{article.abstract}}</h4>
+            <h4> Published: {{mySplit(article.published_date,0)}}</h4>
+            <h4><a href='{{article.short_url}}' target='_new'>New York Times Full Article</a></h4>
+          </div>
+        </div>
+        </td>
+      </tr>
+    </ng-template>
+  </tbody>
+  </table>
+    <br/>&nbsp;
+  </div>
+</div>
+>>>>>>> 7da459e853337eb8061344f7dc2b2318ff60ec69
