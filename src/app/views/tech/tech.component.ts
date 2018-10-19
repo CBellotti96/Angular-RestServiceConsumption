@@ -5,7 +5,8 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-tracks',
   templateUrl: './tech.component.html',
-  styleUrls: ['./tech.component.css']
+  styleUrls: ['./tech.component.css',
+]
 })
 export class TechComponent implements OnInit {
 
@@ -27,6 +28,11 @@ export class TechComponent implements OnInit {
     } else {
       this.selectedArt = index;
     }
+  }
+
+  $scope.mySplit = function(string, nb) {
+    var array = string.split('T');
+    return array[nb];
   }
     ngOnInit() {
   }

@@ -24,6 +24,7 @@
     "ng2-bootstrap-modal": "^1.0.1",
     "ngx-bootstrap": "^3.0.1",
     "rxjs": "~6.2.0",
+    "startbootstrap-clean-blog": "^5.0.1",
     "zone.js": "~0.8.26"
   },
   "devDependencies": {
