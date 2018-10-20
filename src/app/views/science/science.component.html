@@ -31,7 +31,11 @@
     <ng-template ngFor let-article [ngForOf]="articles" let-index="index">
     <tr  (click)='showDetail(index,article)' class="clickable" >
       <!--<td>{{index+1}}</td>-->
-      <td><img src='{{article.multimedia[0].url}}' class="img-responsive" ></td>
+      <td *ngIf="article.multimedia.length">
+        <img src='{{article.multimedia[0].url}}' class="img-responsive" >
+      </td>
+      <td *ngIf="article.multimedia.length == 0">
+      </td>
       <td>{{article.title}}</td>
       <td>{{article.byline}}</td>
     </tr>
