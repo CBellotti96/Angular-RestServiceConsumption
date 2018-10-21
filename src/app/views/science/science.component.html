@@ -32,7 +32,7 @@
     <tr  (click)='showDetail(index,article)' class="clickable" >
       <!--<td>{{index+1}}</td>-->
       <td *ngIf="article.multimedia.length">
-        <img src='{{article.multimedia[0].url}}' class="img-responsive" >
+        <img src='{{article.multimedia[0].url}}' class="img-responsive" style="width: 6vw; display: block; margin-left: auto; margin-right: auto;">
       </td>
       <td *ngIf="article.multimedia.length == 0">
       </td>
@@ -50,7 +50,7 @@
           <h2>{{article.title}}</h2>
           <h4>{{article.byline}}</h4>
           <h4>{{article.abstract}}</h4>
-          <h4> Published: {{mySplit(article.published_date,0)}}</h4>
+          <h4> Published: {{dateSplit(article.published_date)}}</h4>
           <h4><a href='{{article.short_url}}' target='_new'>New York Times Full Article</a></h4>
         </div>
       </div>

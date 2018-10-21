@@ -46,23 +46,23 @@ h2 {
 }
 .tech-nav {
     display: inline-block;
-    font-size: 24px;   
+    font-size: 24px;
     padding-left: 20px;
 }
 .tech-nav:hover {
     display: inline-block;
-    font-size: 24px;   
+    font-size: 24px;
     padding-left: 20px;
     cursor: pointer;
 }
 .science-nav {
     display: inline-block;
-    font-size: 24px;   
+    font-size: 24px;
     padding-left: 20px;
 }
 .science-nav:hover {
     display: inline-block;
-    font-size: 24px;   
+    font-size: 24px;
     padding-left: 20px;
     cursor: pointer;
 }

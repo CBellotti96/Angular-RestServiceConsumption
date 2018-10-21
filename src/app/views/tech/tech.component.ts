@@ -13,6 +13,7 @@ export class TechComponent implements OnInit {
   articles: any[] = [ ];
   attributes: any[] = [ ];
   selectedArt = -1;
+  private month_arr: any[] = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
   constructor(private _apiSvc: NytService, private _dialogService: DialogService) {
     _apiSvc.getTechArticles().subscribe(x => {
       this.articles = x.results;
@@ -30,9 +31,11 @@ export class TechComponent implements OnInit {
     }
   }
 
-  mySplit(string, nb) {
-    var array = string.split('T');
-    return array[nb];
+  dateSplit(string) {
+    var date = string.split('T');
+    var pieces = date[0].split('-');
+    var returnable = this.month_arr[pieces[1]-1] + " " + pieces[2] +  ", " + pieces[0];
+    return returnable;
   }
 
   ngOnInit() {
