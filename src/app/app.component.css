@@ -72,4 +72,12 @@ h2 {
 }
 body {
   background-image: url("http://www.technocrazed.com/wp-content/uploads/2015/12/New-York-Wallpaper-Background-1.jpg");
+  /* Set a specific height */
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
