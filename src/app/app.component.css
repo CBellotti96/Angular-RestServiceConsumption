@@ -70,6 +70,7 @@ h2 {
     padding-left: 20px;
     cursor: pointer;
 }
+/*https://www.w3schools.com/howto/howto_css_parallax.asp*/
 body {
   background-image: url("http://www.technocrazed.com/wp-content/uploads/2015/12/New-York-Wallpaper-Background-1.jpg");
   /* Set a specific height */
