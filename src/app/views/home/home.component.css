@@ -13,7 +13,7 @@ table th{
 }
 .detail div{
     background-color:whitesmoke;
-    padding:0;
+    padding:.5%;
 }
 table {
     width: 100%;
@@ -38,10 +38,10 @@ h2 {
 https://stackoverflow.com/questions/11323813/how-to-outline-text-in-html-css#17205396
 */
 .text_shadow {
-  color: white;
+  color: black;
   text-shadow:
-  -1px -1px 0 #000,
-  1px -1px 0 #000,
-  -1px 1px 0 #000,
-  1px 1px 0 #000;
+  -1px -1px 0 #FFF,
+  1px -1px 0 #FFF,
+  -1px 1px 0 #FFF,
+  1px 1px 0 #FFF;
 }
