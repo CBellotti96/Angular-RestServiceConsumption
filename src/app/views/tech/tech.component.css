@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 table th{
@@ -72,6 +73,8 @@ a:active {
 }
 
 =======
+=======
+>>>>>>> parent of cf61eb9... links open in new tab
 
 
 table th{
@@ -80,7 +83,10 @@ table th{
     font-family: Arial, Helvetica, sans-serif;
     padding-right:20px;
     padding-left:20px;
+<<<<<<< HEAD
     border-spacing: 0px 2px;    
+=======
+>>>>>>> parent of cf61eb9... links open in new tab
 }
 .clickable {
     background: rgba(255, 255, 255, 0.7);
@@ -100,8 +106,12 @@ table {
     font-family: Arial, Helvetica, sans-serif;
     background-repeat: no-repeat;
     background-attachment: fixed;
+<<<<<<< HEAD
     border-spacing: 0px 2px;    
 }
+=======
+  }
+>>>>>>> parent of cf61eb9... links open in new tab
 h2 {
   text-align: center;
   font-style: bold;
@@ -146,4 +156,7 @@ a:active {
   top: 5px;
 }
 
+<<<<<<< HEAD
 >>>>>>> f2642fadbef80a8186c66fc2433ff66b8130f607
+=======
+>>>>>>> parent of cf61eb9... links open in new tab
