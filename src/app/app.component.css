@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 table th{
     text-align: left;
     font-size: large;
@@ -87,18 +85,13 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
-=======
-=======
->>>>>>> parent of cf61eb9... links open in new tab
+
 table th{
     text-align: left;
     font-size: large;
     padding-right:20px;
     padding-left:20px;
-<<<<<<< HEAD
     border-spacing: 0px 2px;
-=======
->>>>>>> parent of cf61eb9... links open in new tab
 }
 .clickable:hover{
     background: whitesmoke;
@@ -112,11 +105,7 @@ table {
   width: 100%;
   padding-left: 5%;
   padding-right: 10%;
-<<<<<<< HEAD
   border-spacing: 0px 2px;
-=======
-
->>>>>>> parent of cf61eb9... links open in new tab
 }
 h2 {
   text-align: center;
@@ -185,7 +174,3 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
-<<<<<<< HEAD
->>>>>>> f2642fadbef80a8186c66fc2433ff66b8130f607
-=======
->>>>>>> parent of cf61eb9... links open in new tab
