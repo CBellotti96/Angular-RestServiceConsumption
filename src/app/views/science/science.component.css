@@ -7,8 +7,11 @@ table th{
     padding-right:20px;
     padding-left:20px;
 }
+.clickable {
+    background: rgba(255, 255, 255, 0.7);
+}
 .clickable:hover{
-    background: whitesmoke;
+    background: rgb(255,255,255, 1);
     cursor: pointer;
 }
 .detail div{
@@ -26,6 +29,7 @@ table {
 h2 {
   text-align: center;
   font-style: bold;
+  font-size: 35px;
   font-family: "Arial Black", Gadget, sans-serif;
 }
 .container {
