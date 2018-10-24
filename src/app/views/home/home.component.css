@@ -50,3 +50,25 @@ https://stackoverflow.com/questions/11323813/how-to-outline-text-in-html-css#172
   -1px 1px 0 #FFF,
   1px 1px 0 #FFF;
 }
+
+a {
+    text-align: center;
+    background-color: black;
+  box-shadow: 0 5px gray;
+  color: white;
+  padding: 0.5em 0.5em;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+a:hover {
+  background-color: darkslategrey;
+  cursor: pointer;
+}
+
+a:active {
+  box-shadow: none;
+  top: 5px;
+}
+
