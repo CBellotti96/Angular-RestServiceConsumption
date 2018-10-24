@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 table th{
     text-align: left;
     font-size: large;
@@ -85,3 +86,93 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+=======
+table th{
+    text-align: left;
+    font-size: large;
+    padding-right:20px;
+    padding-left:20px;
+    border-spacing: 0px 2px;
+}
+.clickable:hover{
+    background: whitesmoke;
+    cursor: pointer;
+}
+.detail div{
+    background-color:whitesmoke;
+    padding:0;
+}
+table {
+  width: 100%;
+  padding-left: 5%;
+  padding-right: 10%;
+  border-spacing: 0px 2px;
+}
+h2 {
+  text-align: center;
+  font-style: bold;
+  font-family: "Arial Black", Gadget, sans-serif;
+
+}
+.navbar-header {
+    margin: auto;
+    width: 220px;
+}
+.navbar-brand {
+    font-size: 21px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
+}
+.navbar-brand:hover {
+    font-size: 21px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
+    cursor: pointer;
+    color: rgb(104, 104, 104);
+}
+.container {
+    border-bottom: solid 1.5px;
+    padding-bottom: 25px;
+    padding-top: 10px;
+}
+.tech-nav {
+    display: inline-block;
+    font-size: 21px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 20px;
+}
+.tech-nav:hover {
+    display: inline-block;
+    font-size: 21px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 20px;
+    cursor: pointer;
+    color: rgb(104, 104, 104);
+}
+.science-nav {
+    display: inline-block;
+    font-size: 21px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 20px;
+}
+.science-nav:hover {
+    display: inline-block;
+    font-size: 21px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 20px;
+    cursor: pointer;
+    color: rgb(104, 104, 104);
+}
+/*https://www.w3schools.com/howto/howto_css_parallax.asp*/
+body {
+  background-image: url("http://www.technocrazed.com/wp-content/uploads/2015/12/New-York-Wallpaper-Background-1.jpg");
+  /* Set a specific height */
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+>>>>>>> f2642fadbef80a8186c66fc2433ff66b8130f607
